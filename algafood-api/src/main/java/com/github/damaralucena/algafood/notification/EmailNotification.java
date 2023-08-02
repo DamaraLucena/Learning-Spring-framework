@@ -1,21 +1,31 @@
 package com.github.damaralucena.algafood.notification;
 
-import org.springframework.stereotype.Component;
-
 import com.github.damaralucena.algafood.model.Client;
 
-
-@Component
 public class EmailNotification implements Notifier {
 	
-	public EmailNotification() {
+	private boolean capsLock;
+	private String hostServerSmtp;
+	
+	public EmailNotification( String hostServerSmtp) {
+		this.hostServerSmtp = hostServerSmtp;
 		System.out.println("EmailNotification");
 	}
 	
 	@Override
 	public void notification(Client client, String message) {
-		System.out.printf("Notification %s customer via email %s\n",
-				client.getName(), client.getEmail(), message);
+		if (this.capsLock) {
+			message = message.toUpperCase();
+		}
+		
+		System.out.printf("Notification %s customer via email %s using SMTP %s\n",
+				client.getName(), client.getEmail(), this.hostServerSmtp, message);
 	}
+
+	public void setCapsLock(boolean capsLock) {
+		this.capsLock = capsLock;
+	}
+	
+	
 
 }
