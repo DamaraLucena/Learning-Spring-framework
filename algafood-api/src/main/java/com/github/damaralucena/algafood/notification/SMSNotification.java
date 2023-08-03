@@ -1,8 +1,10 @@
 package com.github.damaralucena.algafood.notification;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import com.github.damaralucena.algafood.model.Client;
 
+@Primary
 @Component
 public class SMSNotification implements Notifier {
 	
