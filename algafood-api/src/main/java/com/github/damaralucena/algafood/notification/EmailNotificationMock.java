@@ -4,20 +4,18 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 import com.github.damaralucena.algafood.model.Client;
 
-
-
-@Profile("prod")
+@Profile("dev")
 @NotifierType(UrgencyLevel.NORMAL)
 @Component
-public class EmailNotification implements Notifier {
+public class EmailNotificationMock implements Notifier {
 	
-	public EmailNotification() {
-		System.out.println("EmailNotification prod");
+	public EmailNotificationMock() {
+		System.out.println("EmailNotification Mock");
 	}
 	
 	@Override
 	public void notification(Client client, String message) {
-		System.out.printf("Notification %s customer via email %s: %s\n",
+		System.out.printf("Mock: Notification %s customer via email %s: %s\n",
 				client.getName(), client.getEmail(), message);
 	}	
 
