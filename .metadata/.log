@@ -4264,3 +4264,12 @@ org.eclipse.jface.text.BadLocationException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 18:53:14.551
 !MESSAGE Classpath changed for project: algafood-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 18:55:58.208
+!MESSAGE Classpath changed for project: algafood-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 18:56:24.560
+!MESSAGE Classpath changed for project: algafood-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 18:56:52.206
+!MESSAGE Classpath changed for project: algafood-api

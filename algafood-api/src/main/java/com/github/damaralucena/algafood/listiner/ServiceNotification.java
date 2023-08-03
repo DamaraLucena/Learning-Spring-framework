@@ -15,7 +15,7 @@ public class ServiceNotification {
 
 	@EventListener
 	public void ClientActivatedListiner(ClientActivatedEvent event) {
-		notification.notification(event.getClient(), "Your registration in the system is active");
+		notification.notification(event.getClient().getName(), "Your registration in the system is active");
 		
 	}
 }
