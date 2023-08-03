@@ -1,3 +1,4 @@
+
 package com.github.damaralucena.algafood;
 
 import org.springframework.boot.SpringApplication;
