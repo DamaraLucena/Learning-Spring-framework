@@ -3419,3 +3419,12 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 11:09:36.608
 !MESSAGE Classpath changed for project: algafood-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 11:11:47.447
+!MESSAGE Classpath changed for project: algafood-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 11:12:21.421
+!MESSAGE Classpath changed for project: algafood-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2023-08-03 11:13:05.550
+!MESSAGE Classpath changed for project: algafood-api
